@@ -1,0 +1,56 @@
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 120px;
+    text-align: center;
+    color:darkgoldenrod;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+}
+.formulaire {
+    background-color: darkred;
+    background-image: linear-gradient(rgb(182, 130, 139), rgb(97, 24, 97));
+    color: aquamarine;
+    border: 3px;
+    border-radius: 40px;
+    padding-bottom: 1%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: salmon;
+    position: fixed;
+    top: 0;
+    width: 100%;
+ }
+ .linavbar {
+     float: left;
+ }
+ .linavbar a{
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 14px;
+ }
+ .linavbar a:hover:not(.navbaractive){
+     background-color: beige;
+ }
+ .navbaractive {
+     background-color: aliceblue;
+ }
+ @media screen and (max-width :480px){
+    .formulaire{
+        width: 100%;
+    }
+ }
+    

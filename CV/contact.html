@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <title>Contactez-moi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta charset="utf-8">
+    <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+        <ul class="navbar">
+            <li class="linavbar"><a href="index.html">Curriculum Vitae</a></li>
+            <li class="linavbar"><a href="hobby.html">Hobby</a></li>
+            <li class="linavbar"><a href="contact.html">Contact</a></li>
+        </ul>
+        <h1>Formulaire de contact</h1>
+        <div class="formulaire"><p>Merci d'être venu visiter mon site. Pour plus d'informations, veuillez remplir le formulaire si dessous avec le plus d'élément possible.</p>
+        <form action="https://httpbin.org/post" method="post">
+            <label for="Name">Nom et Prénom</label><br>
+            <input type="text" id="Name" required><br>
+        <p>Vous me contactez pour :</p>
+            <input type="radio" id="rens" name="whyfor" value="renseignement" required>
+            <label for="rens">Un renseignement</label><br>
+            <input type="radio" id="com" name="whyfor" value="commentaire" required>
+            <label for="com">Un commentaire</label><br>
+        <p>Vous m'avez connu par</p>
+            <input type="checkbox" id="siteweb" name="siteweb" value="siteweb">
+            <label for="siteweb">Mes différents sites</label><br>
+            <input type="checkbox" id="siteweb" name="twitch" value="twitch">
+            <label for="twitch">Ma page twitch officielle</label><br>
+            <input type="checkbox" id="siteweb" name="discord" value="discord">
+            <label for="discord">L'un de mes serveurs discord</label>
+            <p>Avez-vous quelque chose à dire ?</p>
+            <textarea name="other" style="width: 60%; height: 400px;">
+            J'aime ma vie !
+            </textarea><br>
+            <div class="button">
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+        
+       
+    <a href="mailto:sebastien.journiac@le-campus-numérique.fr?subject=Contact&body=J%27aime%20ma%20vie!">Me contacter par email</a></div>
+    </body>
+</html>

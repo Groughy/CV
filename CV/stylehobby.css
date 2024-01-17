@@ -1,0 +1,66 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right :auto;
+    max-width: 100%;
+    height: auto;
+}
+h1 {
+    font-size: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: tomato;
+    text-shadow: 0 0 7px rebeccapurple;
+    text-align: center;
+}
+.textjdr{
+    background-color: crimson;
+    color:aliceblue ;
+    border: 3px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: salmon;
+    position: fixed;
+    top: 0;
+    width: 100%;
+ }
+ .linavbar {
+     float: left;
+ }
+ .linavbar a{
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 14px;
+ }
+ .linavbar a:hover:not(.navbaractive){
+     background-color: beige;
+ }
+ .navbaractive {
+     background-color: aliceblue;
+ }
+ @media screen and (max-width: 480px) {
+    .textjdr {width: 400px;}
+ }
+ .youtube {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+ }
+ .youtube iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+ }

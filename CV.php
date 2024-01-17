@@ -1,3 +1,9 @@
+<?php
+ $metaTitle = 'Cv de Sébastien';
+ $metaDescription = 'Le CV le plus moche de ta région';
+ include 'header.php';
+?>
+    <link rel="stylesheet" href="CV/styles.css">
 <body>
     <div class="background">
         <div class="bubbles">
@@ -43,11 +49,6 @@
    <span style="--i:28;"></span>
    </div>
    </div>
-    <ul class="navbar">
-        <li class="linavbar"><a href="index.html">Curriculum Vitae</a></li>
-        <li class="linavbar"><a href="hobby.html">Hobby</a></li>
-        <li class="linavbar"><a href="contact.html">Contact</a></li>
-    </ul>
     <!--C'est ici que l'on s'amuse à faire des idioties.-->
     <div  class="idcard"><p>Journiac Sébastien</p>
     <p>4535 Route Départementale 2</p>
@@ -116,3 +117,5 @@
             </div>
         </div>
     </main>
+<?php include('footer.php');
+?>
