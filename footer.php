@@ -1,17 +1,11 @@
     <footer>
-        <p>Contact : sebastien.journiac@orange.fr</p>
+        <p>Contact : sebastien.journiac@orange.fr</p><br>
 <?php
-  $dateFirstVisite = date("Y-m-d H:i:s");
-echo $dateFirstVisite;
+  echo $_SESSION['time'];
+  echo "<br>";
+  echo $_SESSION['countViewPage'];
 ?>
  </footer>
-  </body>
 </html>
 
-<?php
-if (!isset($_SESSION['count'])) {
-  $_SESSION['count'] = 0;
-} else {
-  $_SESSION['count']++;
-}
-?>
+

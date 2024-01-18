@@ -8,8 +8,6 @@ if ($_GET["page"] == "CV") {
 } else if ($_GET["page"] == "contact") {
     include 'contact.php';
 } else if ( $_GET["page"] == false) {
-    include 'index.php';
-} else {
     echo "erreur 404, Fais un effort !";
 }
 ?>

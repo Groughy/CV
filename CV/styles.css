@@ -72,9 +72,9 @@ h2 {
     .idcard {width: 100%; padding-top: 10%; padding-left: 10%; padding-right: 10%;}
     #photo {width: 20%; height: 10%;}
 }
-.footer {
+footer {
     text-align: right;
-    color: #03a9f4;
+    color: #03a9f4 !important ;
 }
 td {
     text-align: justify;
