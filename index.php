@@ -1,5 +1,4 @@
 <?php
-
 $_GET["page"] = filter_input(INPUT_GET,"page", FILTER_SANITIZE_URL);
 if ($_GET["page"] == "CV") {
     include 'CV.php';
@@ -7,7 +6,7 @@ if ($_GET["page"] == "CV") {
     include 'Hobby.php';
 } else if ($_GET["page"] == "contact") {
     include 'contact.php';
-} else if ( $_GET["page"] == false) {
+} else if (!$_GET["page"]) {
     echo "erreur 404, Fais un effort !";
 }
-?>
+
