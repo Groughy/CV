@@ -1,4 +1,6 @@
 <?php include 'header.php';
+
+
 ?>
 <body>
 <h1>Message bien reçu !</h1>
@@ -8,10 +10,10 @@
     <div class="card-body">
         <h5 class="card-title">Rappel de vos informations</h5>
 	<p class="card-text"><b>Genre</b> : <?php echo $_POST['Gender']; ?></p>
-        <p class="card-text"><b>Nom et Prénom</b> : <?php echo $_POST['Name']; ?></p>
-        <p class="card-text"><b>E-mail</b> : <?php echo $_POST['email']; ?></p>
+        <p class="card-text"><b>Nom et Prénom</b> : <?php echo $_POST['Name']=filter_input(INPUT_POST, 'Name'); ?></p>
+        <p class="card-text"><b>E-mail</b> : <?php echo $_POST['email']=filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL); ?></p>
 	<p class="card-text"><b>Raison</b> : <?php echo $_POST['whyfor']; ?></p>
-	<p class="card-text"><b>Message</b> : <?php echo $_POST['other']; ?></p>
+	<p class="card-text"><b>Message</b> : <?php echo $_POST['other']=filter_input(INPUT_POST, 'other', FILTER_SANITIZE_SPECIAL_CHARS); ?></p>
  </div>
 </div>
 </body>
